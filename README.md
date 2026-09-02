@@ -1,4 +1,4 @@
-# Telco_Customer_Churn_Analysis
+# 📊 Telco Customer Churn Analysis
 
 End-to-end churn analysis on a telecom customer base — from raw data cleaning to an interactive Power BI dashboard — surfacing where revenue is leaking and why.
 
@@ -39,9 +39,9 @@ The workflow: raw CSV → Python cleaning → PostgreSQL for segmentation and co
 | Segment | Churn Rate |
 |---|---|
 | Low Tenure – High Charges | **41.18%** |
-| Low Tenure – Low Charges | **38.51%** |
-| High Tenure – High Charges | **15.68%** |
-| High Tenure – Low Charges | **3.62%** |
+| Low Tenure – Low Charges | 38.51% |
+| High Tenure – High Charges | 15.68% |
+| High Tenure – Low Charges | 3.62% |
 
 New, high-paying customers are the single riskiest group — tenure matters more than price sensitivity once a customer is established.
 
@@ -59,14 +59,59 @@ New, high-paying customers are the single riskiest group — tenure matters more
 
 ## 🗂️ Dashboard Structure
 
-The Power BI report is organized into four pages:
+The Power BI report is organized into four pages, each with headline KPIs and a curated insights panel.
 
-| Page | Focus |
+### 1. Executive Overview
+
+| KPI | Value |
 |---|---|
-| **Executive Overview** | Headline KPIs — total customers, churn count/rate, avg. tenure, churn by tenure group, internet service, payment method, and contract type |
-| **Customer Profile Analysis** | Demographic and account cuts — gender, senior citizen status, dependents, partner status, paperless billing, tenure trend |
-| **Service Adoption Analysis** | Churn vs. number of services subscribed, and churn by individual add-ons (streaming, tech support, online security) |
-| **Revenue and Risk Analysis** | Monthly revenue at risk by contract/internet service/payment method, churned vs. retained revenue split, and churn rate by tenure–spend customer segment |
+| Total Customers | 7.043K |
+| Churn Count | 1.87K |
+| Churn Rate | 26.54% |
+| Avg Tenure | 32.37 months |
+
+**Focus:** Churn vs. non-churn split, churn by tenure group, churn by internet service, payment method, and contract type.
+
+**Insights:** The majority of churn happens early — 744 customers churned in the first 6 months. Long-tenure customers (49+ months) churn far less (213). Fiber optic customers are the most vulnerable (1,297 churned) vs. DSL (459) and no internet (113). Electronic check users show the highest churn (1,071). Month-to-month contracts dominate churn (1,655) vs. one-year (166) and two-year (48).
+
+### 2. Customer Profile Analysis
+
+| KPI | Value |
+|---|---|
+| Senior Citizen % | 16.21% |
+| Customers with Dependents % | 29.96% |
+| Customers with Partner % | 48.30% |
+| Paperless Billing % | 59.22% |
+
+**Focus:** Demographic and account cuts — gender, senior citizen status, dependents, partner status, paperless billing, tenure trend.
+
+**Insights:** Churn is almost evenly split — Female (50.24%) vs. Male (49.76%); gender isn't a strong differentiator. Customers without dependents churn far more (1,543 vs. 326). Paperless billing customers churn far more (1,400 vs. 469). Higher churn among seniors (476) vs. non-seniors (1,393). Churn decreases steadily as tenure increases. Customers without partners churn more (1,200 vs. 669).
+
+### 3. Service Adoption Analysis
+
+| KPI | Value |
+|---|---|
+| Avg Services per Customer | 4 |
+| High Adoption Customers | 2K |
+| Low Adoption Customers | 3K |
+| High Adoption Churn Rate | 20.30% |
+
+**Focus:** Churn vs. number of services subscribed, and churn by individual add-ons (streaming, tech support, online security).
+
+**Insights:** Churn rate drops from 44% (3 services) to just 2–5% (8–9 services). Lack of tech support is a major churn driver (1,559 churned vs. only 310 with support). Customers without online security churn heavily (1.57K vs. 0.30K). Customers using multiple bundled services are far less likely to leave.
+
+### 4. Revenue and Risk Analysis
+
+| KPI | Value |
+|---|---|
+| Monthly Revenue | $456.12K |
+| Monthly Revenue Loss | $139.13K |
+| Monthly Revenue Loss % | 30.50% |
+| Avg Monthly Charge of Churned Customer | $74.44 |
+
+**Focus:** Monthly revenue at risk by contract/internet service/payment method, churned vs. retained revenue split, and churn rate by tenure–spend customer segment.
+
+**Insights:** 30.5% of monthly revenue ($139.13K) is lost to churn. Month-to-month customers account for the bulk of revenue loss ($121K) vs. one-year ($14K) and two-year ($4K) contracts. Fiber optic contributes the largest revenue loss ($114K) vs. DSL ($23K) and no internet ($2K). Electronic check users drive the biggest payment-method losses ($84K). Low-tenure, high-charge customers are the most vulnerable segment (41.18% churn rate).
 
 ---
 
