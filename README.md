@@ -75,7 +75,7 @@ The Power BI report is organized into four pages, each with headline KPIs and a 
 **Insights:** The majority of churn happens early — 744 customers churned in the first 6 months. Long-tenure customers (49+ months) churn far less (213). Fiber optic customers are the most vulnerable (1,297 churned) vs. DSL (459) and no internet (113). Electronic check users show the highest churn (1,071). Month-to-month contracts dominate churn (1,655) vs. one-year (166) and two-year (48).
 
 ### 2. Customer Profile Analysis
-
+![customer profile](assets/customer_churn_customer_profile.png)
 | KPI | Value |
 |---|---|
 | Senior Citizen % | 16.21% |
@@ -88,7 +88,7 @@ The Power BI report is organized into four pages, each with headline KPIs and a 
 **Insights:** Churn is almost evenly split — Female (50.24%) vs. Male (49.76%); gender isn't a strong differentiator. Customers without dependents churn far more (1,543 vs. 326). Paperless billing customers churn far more (1,400 vs. 469). Higher churn among seniors (476) vs. non-seniors (1,393). Churn decreases steadily as tenure increases. Customers without partners churn more (1,200 vs. 669).
 
 ### 3. Service Adoption Analysis
-
+![service adoption](assets/customer_churn_service_adoption.png)
 | KPI | Value |
 |---|---|
 | Avg Services per Customer | 4 |
@@ -101,7 +101,7 @@ The Power BI report is organized into four pages, each with headline KPIs and a 
 **Insights:** Churn rate drops from 44% (3 services) to just 2–5% (8–9 services). Lack of tech support is a major churn driver (1,559 churned vs. only 310 with support). Customers without online security churn heavily (1.57K vs. 0.30K). Customers using multiple bundled services are far less likely to leave.
 
 ### 4. Revenue and Risk Analysis
-
+![revenue risk](assets/customer_churn_revenue_risk.png)
 | KPI | Value |
 |---|---|
 | Monthly Revenue | $456.12K |
