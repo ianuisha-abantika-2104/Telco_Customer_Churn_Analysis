@@ -62,7 +62,7 @@ New, high-paying customers are the single riskiest group — tenure matters more
 The Power BI report is organized into four pages, each with headline KPIs and a curated insights panel.
 
 ### 1. Executive Overview
-
+![executive overview](assets/customer_churn_executive_overview.png)
 | KPI | Value |
 |---|---|
 | Total Customers | 7.043K |
